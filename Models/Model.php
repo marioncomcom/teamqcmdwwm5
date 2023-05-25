@@ -48,6 +48,17 @@
             }
         }
 
+        public function get_selection_question($theme, $niveau)
+        {
+            $stmt = $this->bd->prepare("SELECT * FROM question WHERE id_theme = :theme AND niveau_question = :niveau ORDER BY RAND() LIMIT 20");
+            $stmt->bindParam(':theme' , $theme);
+            $stmt->bindParam(':niveau' , $niveau);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+        }
+
+
 
 
 

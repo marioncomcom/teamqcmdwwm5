@@ -59,7 +59,7 @@
 	{
 		exit("Error 404 : not found");
 	}
-
 	
 	
 	?>
+</body>

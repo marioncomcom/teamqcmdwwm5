@@ -11,5 +11,13 @@ class Controller_introduction extends Controller
 	{
 		$this->render("introduction");
 	}
+
+	public function action_question()
+	{
+		// session_start();
+		// $_SESSION['questions'] = $questions;
+
+		$this->render("question");
+	}
 }
 ?>
