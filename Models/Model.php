@@ -31,35 +31,53 @@
             }
             return self::$instance ;
         }
-
-
+        
         public function get_login_user($email, $password)
         {
-            $r = $this->bd->prepare("SELECT * FROM user WHERE email=:email");
+           
+            $r = $this->bd->prepare("SELECT * FROM user WHERE email_user=:email AND mdp_user=:password ");
             $r->bindParam(':email', $email);
+            $r->bindParam(':password', $password);
             $r->execute();
-            if ($r->rowCount() > 0) {
-                $user = $r->fetch();
-                if(password_verify($password, $user['password'])){
-                    return $user;
-                }else {
-                    return false;
-                }
-            }
+
+            $user = $r->fetch(PDO::FETCH_OBJ);
+
+            return $user;
+           
         }
 
-        public function get_selection_question($theme, $niveau)
-        {
-            $stmt = $this->bd->prepare("SELECT * FROM question WHERE id_theme = :theme AND niveau_question = :niveau ORDER BY RAND() LIMIT 20");
-            $stmt->bindParam(':theme' , $theme);
-            $stmt->bindParam(':niveau' , $niveau);
+        public function get_id_questions($theme, $niveau) {
+            $_SESSION['theme'] = $theme;
+            $_SESSION['niveau'] = $niveau;
+        
+            $stmt = $this->bd->prepare("SELECT id_question FROM question WHERE id_theme = :theme AND niveau_question = :niveau ORDER BY RAND() LIMIT 20");
+            $stmt->bindParam(':theme', $_SESSION['theme']);
+            $stmt->bindParam(':niveau', $_SESSION['niveau']);
             $stmt->execute();
-
+        
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
 
+     
+     
+        public function get_afficher_une_question($idquestion)
+        {
+            $r = $this->bd->prepare("SELECT lib_question FROM question WHERE id_question=:id_question");
+            $r->bindParam(':id_question', $idquestion);
+            $r->execute();
+           
+            
+            return  $r->fetch(PDO::FETCH_OBJ);
+        }
 
+        public function get_afficher_une_reponse($idquestion)
+        {
+            $r = $this->bd->prepare("SELECT lib_reponse FROM reponse WHERE id_question=:id_question");
+            $r->bindParam(':id_question', $idquestion);
+            $r->execute();
+            
 
-
+            return  $r->fetchAll(PDO::FETCH_OBJ);
+        }
 
     }   // Fin de la Classe

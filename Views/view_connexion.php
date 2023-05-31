@@ -1,9 +1,10 @@
-<?php require_once 'Utils/header.php'; ?>
+
+<main class="fond_rose">
 
 <h1>connexion</h1>
 <section class="w-100 pb-4 d-flex justify-content-center pb-4">
 
-<form id="loginForm" method="post" action="?controller=connected&action=connected">
+<form id="loginForm" method="post" action="?controller=connexion&action=login">
 
   <!-- Email input -->
   <div class="form-outline mb-4">
@@ -35,32 +36,16 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block" style="background-color: #FF3859; border: black">Connexion</button>
+  <button type="submit" name="submit" class="btn btn-primary btn-block" style="background-color: #FF3859; border: black">Connexion</button>
 
 </form>
 </section>
 
-<!-- <script>
-document.getElementById("loginForm").addEventListener("submit", function(event){
-  event.preventDefault();
 
-  const email = document.getElementById("form1Example1").value;
-  const password = document.getElementById("form1Example2").value;
 
-  // Check if the email and password match your condition
-  if(email != 'correctEmail@example.com' || password != 'correctPassword'){
-    // If they don't match show an alert message
-    alert('Invalid email or password. Please try again.');
-  } else {
-    // If they match redirect user or perform another action
-    // For example:
-    // window.location.href = '/homepage';
-  }
-});
-</script> -->
 
-</body>
-<?php require_once 'Utils/footer.php'; ?>
+</main>
+
 
 
 

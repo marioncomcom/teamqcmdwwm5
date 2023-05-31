@@ -2,5 +2,5 @@
 <h1>inscription</h1>
 
 
-</body>
+
 <?php require_once 'Utils/footer.php'; ?>
