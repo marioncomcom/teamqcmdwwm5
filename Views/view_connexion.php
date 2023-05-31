@@ -3,7 +3,7 @@
 <h1>connexion</h1>
 <section class="w-100 pb-4 d-flex justify-content-center pb-4">
 
-<form id="loginForm" method="post" action="?controller=connected&action=connected">
+<form id="loginForm" method="post" action="?controller=connexion&action=login">
 
   <!-- Email input -->
   <div class="form-outline mb-4">
@@ -35,7 +35,7 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block" style="background-color: #FF3859; border: black">Connexion</button>
+  <button type="submit" name="submit" class="btn btn-primary btn-block" style="background-color: #FF3859; border: black">Connexion</button>
 
 </form>
 </section>
@@ -59,5 +59,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
 });
 </script> -->
 
-</body>
+
 <?php require_once 'Utils/footer.php'; ?>
