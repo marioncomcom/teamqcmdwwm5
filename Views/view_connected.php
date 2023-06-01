@@ -13,8 +13,8 @@
     <div><img src="Content/images/cerebrale.jpg" alt="image 5"></div>
   </div>
 
-  <form action="?controller=connected&action=introduction" method="post" novalidate id="startQuizz">
-  <section class="themes">
+  <form action="?controller=connected&action=introduction" method="post" novalidate id="startQuizz">  
+    <section class="themes">
       <div class="themeseul">
         <h2>Thèmes</h2>
       </div>

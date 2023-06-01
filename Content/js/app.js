@@ -1,4 +1,5 @@
-// ---------images----------------
+//* slide images
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       loop: true,
@@ -10,6 +11,7 @@ $(document).ready(function(){
     });
   });
 
+// * pour ne pas commencer le QUIZ sans choisir le thtme et le niveau
 
   const startQuizzForm = document.querySelector('#startQuizz');
 
@@ -40,6 +42,8 @@ if (startQuizzForm) {
   });
 }
 
+// * pour ne pas commencer le QUIZ sans choisir le thtme et le niveau
+
 const formChoix = document.getElementById('formChoix');
 if (formChoix) {
   formChoix.addEventListener('submit', function (event) {
@@ -59,6 +63,7 @@ if (formChoix) {
   });
 }
 
+// * pour faire le clic de la reponse en rouge 
 
 function labelClicked(element) {
   var labels = document.querySelectorAll('.choix label');
@@ -71,3 +76,35 @@ function labelClicked(element) {
   // Ajoute la classe 'selected' uniquement au label cliqué
   element.parentElement.classList.add('selected');
 }
+
+//* la durée des questions
+
+// Définir la durée en secondes
+var duration = 15;
+
+// Sélectionner les éléments HTML pertinents
+var timerDisplay = document.getElementById('timer');
+var nextButton = document.getElementById('nextButton');
+
+// Démarrer le compte à rebours
+var countdown = setInterval(function() {
+  // Afficher le temps restant
+  timerDisplay.innerText = duration;
+
+  // Réduire le temps restant
+  duration--;
+
+  // Vérifier si le temps est écoulé
+  if (duration < 0) {
+    clearInterval(countdown); // Arrêter le compte à rebours
+    goToNextQuestion(); // Passer à la question suivante
+  }
+}, 1000);
+
+// Fonction pour passer à la question suivante
+function goToNextQuestion() {
+  // Effectuer ici les actions nécessaires pour passer à la question suivante
+  // Par exemple, soumettre le formulaire ou effectuer une autre action de navigation
+  document.getElementById('formChoix').submit();
+}
+

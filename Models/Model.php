@@ -80,4 +80,18 @@
             return  $r->fetchAll(PDO::FETCH_OBJ);
         }
 
+        // inscription
+       public function get_inscription($nom, $prenom, $email, $password)
+       {
+           $r = $this->bd->prepare("INSERT INTO user (nom_user, prenom_user, email_user, mdp_user) VALUES (:nom, :prenom, :email, :password)");
+           $r->bindParam(':nom', $nom);
+           $r->bindParam(':prenom', $prenom);
+           $r->bindParam(':email', $email);
+           $r->bindParam(':password', $password);
+           $r->execute();
+
+
+       
+    }
+
     }   // Fin de la Classe
