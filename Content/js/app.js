@@ -40,14 +40,11 @@ if (startQuizzForm) {
   });
 }
 
-const qestionQuizz = document.querySelector('#qestionQuizz');
-
-if (qestionQuizz) {
-  qestionQuizz.addEventListener('next_question', function (event) {
+const formChoix = document.getElementById('formChoix');
+if (formChoix) {
+  formChoix.addEventListener('submit', function (event) {
     const questionInputs = document.querySelectorAll('input[name="reponse"]');
-
     let questionSelected = false;
- 
 
     questionInputs.forEach(function (input) {
       if (input.checked) {
@@ -55,9 +52,22 @@ if (qestionQuizz) {
       }
     });
 
-        if (!themeSelected) {
+    if (!questionSelected) {
       event.preventDefault();
-      alert('Veuillez sélectionner une reponse');
+      alert('Veuillez sélectionner une réponse');
     }
   });
+}
+
+
+function labelClicked(element) {
+  var labels = document.querySelectorAll('.choix label');
+
+  // Supprime la classe 'selected' de tous les labels
+  labels.forEach(function(label) {
+    label.classList.remove('selected');
+  });
+
+  // Ajoute la classe 'selected' uniquement au label cliqué
+  element.parentElement.classList.add('selected');
 }

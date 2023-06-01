@@ -1,5 +1,5 @@
 
-<main class="fond_rose">
+<main class="fond_rose_connexion">
 
 <h1>connexion</h1>
 <section class="w-100 pb-4 d-flex justify-content-center pb-4">
