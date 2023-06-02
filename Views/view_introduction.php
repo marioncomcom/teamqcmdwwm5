@@ -1,20 +1,22 @@
-<main>
 <?php require_once 'Utils/header.php'; ?>
-<h1>introduction</h1>
+<main class="fond_introduction">
 
+    <div class="text_intro">
+        <p>Bienvenue sur <span class="rose">Quest Call Master</span>.</p>
+        <br>
+        <p>Préparez-vous au 16 questions et <span class="rose">FAITES TRES ATTENTION ⚠️ AU COMPTES A REBOURS</span> à chaque questions.</p> 
+        <p>  Dès que vous cliquer sur <span class="rose">"Je me lance !"</span> le compte à rebours est lancé.</p>
+        <p><span class="rose">ETES VOUS PRET !?</span> </p>
 
-<p>Bienvenue sur <span class="rose">Quest Call Master</span>, la destination ultime pour tous les passionnés de quizz à la recherche de défis dans les domaines du sport, de la stratégie cérébrale et du cinéma.
-
-<span class="rose">Quest Call Master</span> est bien plus qu'un simple site de quizz. Nous sommes une communauté dynamique de curieux, de passionnés, et de compétiteurs qui cherchent à élargir leurs horizons, tester leurs connaissances et s'amuser en même temps. Que vous soyez un fin connaisseur de sport, un cerveau stratégique ou un cinéphile averti, vous trouverez ici des quizz soigneusement conçus pour stimuler votre esprit et susciter votre passion.
-</p>
-
-<div class="btn_intro">
+        <div class="btn_intro">
             <form action="?controller=question&action=afficher_une_question" method="post">
                 <button type="submit" name="submit" class="button">Je me lance !</button>
             </form>
         </div>
 
-<?php require_once 'Utils/footer.php'; ?>
+    </div>
+
 </main>
+<?php require_once 'Utils/footer.php'; ?>
 
 

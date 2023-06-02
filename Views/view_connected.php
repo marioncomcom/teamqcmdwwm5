@@ -8,9 +8,9 @@
 
   <div class="owl-carousel">
     <div><img src="Content/images/qcm.png" alt="image 2"></div>
-    <div><img src="Content/images/sport.jpg" alt="image 3"></div>
-    <div><img src="Content/images/cinema.png" alt="image 4"></div>
-    <div><img src="Content/images/cerebrale.jpg" alt="image 5"></div>
+    <div><img src="Content/images/sport.png" alt="image 3"></div>
+    <div><img src="Content/images/cinema.gif" alt="image 4"></div>
+    <div><img src="Content/images/cerebrale.gif" alt="image 5"></div>
   </div>
 
   <form action="?controller=connected&action=introduction" method="post" novalidate id="startQuizz">  

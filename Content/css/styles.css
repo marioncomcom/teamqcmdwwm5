@@ -83,6 +83,65 @@ font-family: 'Quicksand', sans-serif;
   width: 100px;
 }
 
+/** -----------home-------------- */
+.inscription_connected {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 59px;
+}
+
+.inscription_connected a {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.navbartitre img {
+  display: flex;
+  margin-left: 105px;
+  width: 200px;
+}
+
+.connexion_connected {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 59px;
+}
+
+.connexion_connected a {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.fond_rose_home {
+  background-color: #ff3859;
+  height: 100vh;
+}
+.fond_rose_home .btn-primary {
+  color: #ff3859;
+}
+
+.fond_rose_home .btn-primary:hover {
+  color: white;
+  border: 1px solid dashed #ff3859;
+}
+
+.color_p p {
+  margin-left: 20px;
+  margin-top: 70px;
+  color: #fff;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.btn-block {
+  margin: auto;
+}
+
 /** -----------connected-------------- */
 main {
     background-color: white;
@@ -246,12 +305,36 @@ margin: 50px auto;
   }
 
   /** ---------connexion----------- */
-#loginForm form {
+  
+.fond_rose_connexion {
+  background-color: #FF3859;
+  height: 100vh;
+  
+}
+
+.logo_connexion{
+  display: flex;
+  margin-left: 105px;
+  width: 200px;
+}
+  
+.text_connexion{
+  color: white;
+  font-weight: 900;
+  width: 90%;
+  margin-top: 20%;
+  margin-left: 15%;
+  font-size: 20px;
+}
+
+.fond_rose_connexion form {
   background-color: white;
   border: 1px solid gray;
   padding: 20px;
   border-radius: 5px;
+  /* margin-top: 30%; */
 }
+
 .fond_rose{
   background-color:#FF3859 ;
 }
@@ -265,8 +348,55 @@ margin: 50px auto;
 
 }
 
-/* * introduction */
+/* * inscription */
 
+.fond_rose_inscription {
+  background-color: #FF3859;
+  height: 100vh;
+ 
+}
+
+.text_inscription{
+  color: white;
+  font-weight: 900;
+  width: 90%;
+  margin-top: 20%;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.fond_rose_inscription form {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  /* margin-top: 30%; */
+  width: 80%;
+}
+
+.fond_rose_inscription a{
+  color: #000000;
+  
+}
+
+.fond_rose_inscription a:hover{
+  color: #FF3859;
+
+}
+
+
+/* * introduction */
+.fond_introduction p {
+  width: 90%;
+  margin-left: 20px;
+}
+.fond_introduction .rose {
+ font-weight: 600;
+}
+
+.text_intro{
+  margin-top: 50px;
+}
 
 /* * question */
 
