@@ -12,7 +12,7 @@ $(document).ready(function(){
   });
 });
 
-// * pour faire le clic de la reponse en rouge 
+// * pour faire le clic de la reponse en blanc
 // Cette fonction est appelée lorsque l'utilisateur clique sur une réponse
 // Elle met en surbrillance la réponse sélectionnée
 function labelClicked(element) {

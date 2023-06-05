@@ -9,7 +9,7 @@
         <p><span class="rose">ETES VOUS PRET !?</span> </p>
 
         <div class="btn_intro">
-            <form action="?controller=question&action=afficher_une_question" method="post">
+            <form action="?controller=question&action=afficher_une_question" class="button_introduction" method="post">
                 <button type="submit" name="submit" class="button">Je me lance !</button>
             </form>
         </div>

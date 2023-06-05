@@ -1,8 +1,8 @@
 <?php require_once 'Utils/header.php'; ?>
 
-<main>
+<main class="connected">
 
-  <div class="titre">
+  <div class="titre_connected" >
     <img src="Content/images/titre.png" alt="titre">
   </div>
 
@@ -48,8 +48,10 @@
         </ul>
       </div>
     </section>
-    
-    <input type="submit" class="button" name="submit" value="Valider">
+
+    <div class="button_connected">
+      <input type="submit" class="button" name="submit" value="Valider">
+    </div>
   </form>
 
 </main>

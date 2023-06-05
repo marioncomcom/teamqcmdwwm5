@@ -93,13 +93,13 @@ font-family: 'Quicksand', sans-serif;
 
 .inscription_connected a {
   font-size: 40px;
-  font-weight: 700;
+
 }
 
 .navbartitre img {
   display: flex;
-  margin-left: 105px;
   width: 200px;
+  padding-top: 50px;
 }
 
 .connexion_connected {
@@ -112,7 +112,7 @@ font-family: 'Quicksand', sans-serif;
 .connexion_connected a {
   font-size: 40px;
   text-align: center;
-  font-weight: 700;
+
 }
 
 .fond_rose_home {
@@ -123,34 +123,122 @@ font-family: 'Quicksand', sans-serif;
   color: #ff3859;
 }
 
-.fond_rose_home .btn-primary:hover {
-  color: white;
-  border: 1px solid dashed #ff3859;
-}
+/* .fond_rose_home .btn-primary:hover {
+  color: rgb(60, 27, 207);
+  background: #FF3859;
+} */
 
 .color_p p {
-  margin-left: 20px;
   margin-top: 70px;
   color: #fff;
-  font-weight: bold;
-  width: 90%;
+  width: 70%;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .btn-block {
-  margin: auto;
+  width: 60%;
+}
+
+/** ---------connexion----------- */
+  
+.fond_rose_connexion {
+  background-color: #FF3859;
+  height: 100vh;
+  
+}
+
+.logo_connexion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+}
+  
+.text_connexion{
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+.fond_rose_connexion form {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.fond_rose{
+  background-color:#FF3859 ;
+}
+.fond_rose_connexion a{
+  color: #000000;
+  
+}
+
+.fond_rose_connexion a:hover{
+  color: #FF3859;
+
+}
+
+/* * inscription */
+
+.fond_rose_inscription {
+  background-color: #FF3859;
+  height: 100vh;
+ 
+}
+
+.text_inscription{
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+.fond_rose_inscription form {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  /* margin-top: 30%; */
+  width: 80%;
+}
+
+.fond_rose_inscription a{
+  color: #000000;
+  
+}
+
+.fond_rose_inscription a:hover{
+  color: #FF3859;
+
 }
 
 /** -----------connected-------------- */
-main {
+.connected {
     background-color: white;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
-.titre img {
-   width: 400px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.titre_connected img {
+   width: 60%;
+    /* margin-bottom: 50px;
+    margin-top: 50px; */
+
+  }
+
+.titre_connected {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 
   }
 
@@ -158,7 +246,7 @@ main {
 display: flex;
 align-items: center;
 justify-content: center;
-margin-bottom: 50px;
+/* margin-bottom: 50px; */
 }
 
 .theme{
@@ -176,20 +264,20 @@ margin-bottom: 50px;
     text-transform: uppercase;
     color: #999;
     font-size: 13px;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
   
 }  
 
 .themeseul {
   color: #999;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 
 .niveauseul {
     color: #999;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -209,8 +297,8 @@ margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #999;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
     font-size: 13px;
 }
 
@@ -242,7 +330,6 @@ input[type=radio]:checked + label::after {
   cursor: pointer;
 }
 
-
 .button {
     border: none;
     font-size: 15px;
@@ -252,32 +339,31 @@ input[type=radio]:checked + label::after {
     background-color: #FF3859;
 }
 
+.button_connected {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .button {
   background-color: #FF3859;
 border: none;
 border-radius: 10px;
 height: 40px;
-width: 80%;
+width: 60%;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 transition: all 0.2s ease-in-out;
 cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
-margin-bottom: 50px;
-text-align: center;
-margin: 50px auto;
   }
 
   .themes, .niveaux{
     display: grid;
   }
 
-  .theme,.niveau ul {
+  /* .theme,.niveau ul {
     padding-left: 0rem;
     margin-top: 10px;
-  }
+  } */
 
   .carousel {
     width: 80%;
@@ -295,107 +381,39 @@ margin: 50px auto;
     flex-shrink: 0;
   }
   
-  .formulaire{
+  /* .formulaire{
     padding: 10px;
-  }
+  } */
 
   .rose {
     color:#FF3859;
     font-weight: 500;
   }
 
-  /** ---------connexion----------- */
   
-.fond_rose_connexion {
-  background-color: #FF3859;
-  height: 100vh;
-  
-}
-
-.logo_connexion{
-  display: flex;
-  margin-left: 105px;
-  width: 200px;
-}
-  
-.text_connexion{
-  color: white;
-  font-weight: 900;
-  width: 90%;
-  margin-top: 20%;
-  margin-left: 15%;
-  font-size: 20px;
-}
-
-.fond_rose_connexion form {
-  background-color: white;
-  border: 1px solid gray;
-  padding: 20px;
-  border-radius: 5px;
-  /* margin-top: 30%; */
-}
-
-.fond_rose{
-  background-color:#FF3859 ;
-}
-.fond_rose_connexion a{
-  color: #000000;
-  
-}
-
-.fond_rose_connexion a:hover{
-  color: #FF3859;
-
-}
-
-/* * inscription */
-
-.fond_rose_inscription {
-  background-color: #FF3859;
-  height: 100vh;
- 
-}
-
-.text_inscription{
-  color: white;
-  font-weight: 900;
-  width: 90%;
-  margin-top: 20%;
-  margin-left: 5%;
-  font-size: 20px;
-}
-
-.fond_rose_inscription form {
-  background-color: white;
-  border: 1px solid gray;
-  padding: 20px;
-  border-radius: 5px;
-  /* margin-top: 30%; */
-  width: 80%;
-}
-
-.fond_rose_inscription a{
-  color: #000000;
-  
-}
-
-.fond_rose_inscription a:hover{
-  color: #FF3859;
-
-}
-
-
 /* * introduction */
-.fond_introduction p {
-  width: 90%;
-  margin-left: 20px;
+
+.fond_introduction {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
 }
+
 .fond_introduction .rose {
  font-weight: 600;
 }
 
 .text_intro{
   margin-top: 50px;
+}
+
+.button_introduction{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
 }
 
 /* * question */
@@ -522,4 +540,10 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: white;
 font-size: 100px;
 font-weight: 600;
+}
+
+/* * a porpos */
+
+.a_propos{
+  width: 80%;
 }
