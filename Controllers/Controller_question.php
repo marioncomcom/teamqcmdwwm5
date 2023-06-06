@@ -24,7 +24,7 @@ class Controller_question extends Controller
 		$data=['lib_question'=> $libelle_question,
 				'lib_reponse'=> $libelle_reponse ];
 		// on revoie le tout ver la vue question, si le compteur est a 11 alors il est diriger vers la vue resultat
-		if($cpt === 16){
+		if($cpt === 10){
 			$this->render('resultat',$data);
 		}else{
 			$this->render("question", $data);

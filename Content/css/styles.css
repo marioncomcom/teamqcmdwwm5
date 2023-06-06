@@ -432,6 +432,10 @@ cursor: pointer;
 margin-bottom: 80px;
 }
 
+.compteur_question{
+  color: white;
+}
+
 .question_quizz {
   width: 90%;
   color: #ffffff;

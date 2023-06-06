@@ -1,6 +1,4 @@
-
 <main class="fond_rose_connexion">
-
 
   <div class="navbartitre" style=" display: flex; justify-content: center;">
             <img src="Content/images/logo.png" alt=""> 

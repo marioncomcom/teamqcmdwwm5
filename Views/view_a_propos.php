@@ -11,6 +11,7 @@
         <p>Que vous soyez un novice curieux ou un expert avide de défis, nos quizz sauront vous captiver et vous surprendre.
             <br>Notre plateforme, conviviale et intuitive, vous permettra de jouer à tout moment, où que vous soyez.
         </p>
+        
         <p>Nous tenons également à vous assurer une expérience sûre et sécurisée.
             <br>Vos données personnelles sont traitées avec la plus grande confidentialité et notre plateforme est constamment mise à jour pour garantir votre sécurité en ligne.
         </p>
