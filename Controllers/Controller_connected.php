@@ -23,6 +23,8 @@ class Controller_connected extends Controller
 			$liste_des_idquestions = $m->get_id_questions($theme, $niveau);
 			//on stocke les id des questions en session 
 			$_SESSION['liste_des_idquestions'] = 	$liste_des_idquestions;
+			$_SESSION['niveau'] = $niveau;
+			$_SESSION['score'] = 0;
 			//on initialise un compteur à 0 
 			$cpt = 0;
 			// on passe le compteur en session 

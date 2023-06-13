@@ -69,16 +69,17 @@
             
             return  $r->fetch(PDO::FETCH_OBJ);
         }
+     
 
         public function get_afficher_une_reponse($idquestion)
         {
-            $r = $this->bd->prepare("SELECT lib_reponse FROM reponse WHERE id_question=:id_question");
+            $r = $this->bd->prepare("SELECT id_reponse, lib_reponse, bonne_reponse FROM reponse WHERE id_question=:id_question");
             $r->bindParam(':id_question', $idquestion);
             $r->execute();
-            
-
+        
             return  $r->fetchAll(PDO::FETCH_OBJ);
         }
+        
 
         // inscription
        public function get_inscription($nom, $prenom, $email, $password)
@@ -92,6 +93,6 @@
 
 
        
-    }
+        }
 
     }   // Fin de la Classe
