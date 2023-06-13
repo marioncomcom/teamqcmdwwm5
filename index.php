@@ -30,6 +30,7 @@
 	<?php
 	require_once 'Controllers/Controller.php';
 	require_once 'Models/Model.php';
+	session_start();
 	
 	// echo "<b id='controller'>" . "Controller : " . $_GET['controller'] . "<br>" . "</b>";
 	//  echo "<b id='action'>" . "action : " . $_GET['action'] . "<br>" . "</b>" ;
@@ -59,7 +60,8 @@
 	{
 		exit("Error 404 : not found");
 	}
-
 	
 	
 	?>
+</body>
+</html>

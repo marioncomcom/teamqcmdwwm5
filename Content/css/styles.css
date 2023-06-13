@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Quicksand', sans-serif;
 }
-/* ---------nav bar ----------------- */
+/** ---------nav bar ----------------- */
 
 .bg-white {
     background-color: #FF3859 !important;
@@ -47,7 +47,7 @@ font-family: 'Quicksand', sans-serif;
     border-color: #ffff !important;
    
   }
-  /* ---------footer------------- */
+  /** ---------footer------------- */
  
   .footer {
   
@@ -83,16 +83,162 @@ font-family: 'Quicksand', sans-serif;
   width: 100px;
 }
 
-/* -----------home-------------- */
-body {
-    background-color: white;
+/** -----------home-------------- */
+.inscription_connected {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 59px;
 }
 
-.titre img {
-   width: 400px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 10px;
+.inscription_connected a {
+  font-size: 40px;
+
+}
+
+.navbartitre img {
+  display: flex;
+  width: 200px;
+  padding-top: 50px;
+}
+
+.connexion_connected {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 59px;
+}
+
+.connexion_connected a {
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.fond_rose_home {
+  background-color: #ff3859;
+  height: 100vh;
+}
+.fond_rose_home .btn-primary {
+  color: #ff3859;
+}
+
+/* .fond_rose_home .btn-primary:hover {
+  color: rgb(60, 27, 207);
+  background: #FF3859;
+} */
+
+.color_p p {
+  margin-top: 70px;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.btn-block {
+  width: 60%;
+}
+
+/** ---------connexion----------- */
+  
+.fond_rose_connexion {
+  background-color: #FF3859;
+  height: 100vh;
+  
+}
+
+.logo_connexion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+}
+  
+.text_connexion{
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+.fond_rose_connexion form {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.fond_rose{
+  background-color:#FF3859 ;
+}
+.fond_rose_connexion a{
+  color: #000000;
+  
+}
+
+.fond_rose_connexion a:hover{
+  color: #FF3859;
+
+}
+
+/* * inscription */
+
+.fond_rose_inscription {
+  background-color: #FF3859;
+  height: 100vh;
+ 
+}
+
+.text_inscription{
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+.fond_rose_inscription form {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  /* margin-top: 30%; */
+  width: 80%;
+}
+
+.fond_rose_inscription a{
+  color: #000000;
+  
+}
+
+.fond_rose_inscription a:hover{
+  color: #FF3859;
+
+}
+
+/** -----------connected-------------- */
+.connected {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.titre_connected img {
+   width: 60%;
+    /* margin-bottom: 50px;
+    margin-top: 50px; */
+
+  }
+
+.titre_connected {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 
   }
 
@@ -100,6 +246,7 @@ body {
 display: flex;
 align-items: center;
 justify-content: center;
+/* margin-bottom: 50px; */
 }
 
 .theme{
@@ -112,25 +259,25 @@ justify-content: center;
     height: 50px;
 }
 
-.theme a {
+.theme label {
   text-decoration: 0;
     text-transform: uppercase;
     color: #999;
     font-size: 13px;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
   
 }  
 
 .themeseul {
   color: #999;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 
 .niveauseul {
     color: #999;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -144,24 +291,58 @@ justify-content: center;
     height: 50px;
 }
 
-.niveau a {
+.niveau label {
 
     text-decoration: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #999;
-    margin-right: 20px;
-    margin-left: 20px;
+    /* margin-right: 20px;
+    margin-left: 20px; */
     font-size: 13px;
 }
 
-.button a {
+  input[type='radio'].custom-radio {
+    display: none;
+} 
+
+.niveau input[type=radio] + label {
+ font-size: 11px;
+}
+
+input[type=radio]:checked + label {
+  background-color: #FF3859;
+  color: #Fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+input[type=radio]:checked + label::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #FF3859;
+  cursor: pointer;
+}
+
+.button {
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     color: #fff;
     background-color: #FF3859;
+}
+
+.button_connected {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .button {
@@ -169,27 +350,20 @@ justify-content: center;
 border: none;
 border-radius: 10px;
 height: 40px;
-width: 80%;
+width: 60%;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 transition: all 0.2s ease-in-out;
 cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
-margin-bottom: 50px;
-text-align: center;
-margin: 50px auto;
   }
 
   .themes, .niveaux{
     display: grid;
   }
 
-  .theme,.niveau ul {
+  /* .theme,.niveau ul {
     padding-left: 0rem;
     margin-top: 10px;
-  }
+  } */
 
   .carousel {
     width: 80%;
@@ -207,23 +381,172 @@ margin: 50px auto;
     flex-shrink: 0;
   }
   
-  .formulaire{
+  /* .formulaire{
     padding: 10px;
+  } */
+
+  .rose {
+    color:#FF3859;
+    font-weight: 500;
   }
 
-  /* ---------connexion----------- */
-form {
-  border: 1px solid gray;
-  padding: 20px;
-  border-radius: 5px;
-}
+  
+/* * introduction */
 
-a{
-  color: #000000;
+.fond_introduction {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   
 }
 
-a:hover{
-  color: #FF3859;
+.fond_introduction .rose {
+ font-weight: 600;
+}
 
+.text_intro{
+  margin-top: 50px;
+}
+
+.button_introduction{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+/* * question */
+
+.fond_rose_quizz {
+  background-color: #FF3859;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_quizz {
+  width: 100px;
+margin-bottom: 80px;
+}
+
+.compteur_question{
+  color: white;
+}
+
+.question_quizz {
+  width: 90%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+#formChoix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choix {
+  margin-bottom: 15px;
+}
+
+.choix label {
+  display: flex;
+align-items: center;
+cursor: pointer;
+border: 1px solid black;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: #ff3859;
+  width: 300px;
+}
+
+.choix label:hover {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #9e3244a8;
+}
+
+/* .choix input[type="radio"]:checked + label {
+  color: #ffffff;
+  background-color: #471820;
+} */
+.choix input[type="radio"] {
+  display: none;
+}
+
+.choix input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.choix label.selected {
+  color: #FF3859;
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.choix input[type="radio"]:checked + label:before {
+  background-color: #ffffff;
+}
+
+.choix input[type="radio"]:checked + label {
+  background-color: #ffffff;
+  color: #FF3859;
+}
+
+.choix label span {
+  vertical-align: middle;
+}
+
+.ButtonSubmit {
+  margin-top: 50px;
+}
+
+.button2 {
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #FF3859;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #FF3859;
+  color: #ffffff;
+}
+
+#timer{
+  color: white;
+font-size: 100px;
+font-weight: 600;
+}
+
+/* * a porpos */
+
+.a_propos{
+  width: 80%;
 }

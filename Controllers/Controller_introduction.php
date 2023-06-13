@@ -11,5 +11,7 @@ class Controller_introduction extends Controller
 	{
 		$this->render("introduction");
 	}
+
+	
 }
 ?>
