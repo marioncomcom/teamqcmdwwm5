@@ -5,7 +5,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,14 +29,25 @@
 
 <body>
 	<?php
+
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+
+//	if(isset($_SESSION["id_user"])) {
+	//	require_once 'Utils/header.php';
+
+//	}
+
 	require_once 'Controllers/Controller.php';
 	require_once 'Models/Model.php';
+	session_start();
 	
 	// echo "<b id='controller'>" . "Controller : " . $_GET['controller'] . "<br>" . "</b>";
 	//  echo "<b id='action'>" . "action : " . $_GET['action'] . "<br>" . "</b>" ;
 	
     
-	$controllers=["home","connexion","inscription","contact","a_propos","introduction","question","connected"];
+	$controllers=["home","connexion","inscription","contact","a_propos","introduction","question","connected","profil","user"];
 	$controller_default="home";
 	
 	if (isset($_GET['controller']) and in_array($_GET['controller'],$controllers))
@@ -60,6 +72,14 @@
 		exit("Error 404 : not found");
 	}
 
+
+
+// ...
+
+
+require_once 'Utils/footer.php';
+?>
+
 	
-	
-	?>
+</body>
+</html>

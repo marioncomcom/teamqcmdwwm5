@@ -22,6 +22,7 @@ class Controller_connexion extends Controller
 				$this->render("connexion");
 				exit;
 			}
+			$_SESSION["id_user"] = $user->id_user;
 				$this->render("connected");
 
 			}else{
